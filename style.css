@@ -1,0 +1,155 @@
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright_Yellow: hsl(71, 73%, 54%);
+    --Light_Gray: hsl(204, 43%, 93%);
+    --Grayish_Blue: hsl(218, 22%, 67%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body{
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapped{
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 50px rgb(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.head{
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+.title{
+    color: var(--Cyan);
+}
+
+.extra{
+    color: var(--Grayish_Blue);
+    line-height: 1.5;
+}
+
+.garantia{
+    color: var(--Bright_Yellow);
+    font-weight: 700;
+}
+
+.wrap-price{
+    padding-bottom: 1.35em;
+    padding-top: 1.35em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    background-color: var(--Cyan);
+}
+
+.month{
+    margin: 0;
+    color: var(--Light_Gray);
+}
+
+.per{
+    color: hsl(216, 21%, 76%);
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--Light_Gray);
+}
+
+.wrap-price p{
+    color: var(--Light_Gray);
+}
+
+.btn-sign-up{
+    padding: 0.8em;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 0px solid;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
+    color: var(--Light_Gray);
+    background-color: var(--Bright_Yellow);
+    font-weight: 700;
+}
+
+.btn-sign-up:active{
+    background-color: hsla(71, 73%, 54%, 0.671);
+    color: hsla(203, 44%, 93%, 0.733);
+}
+
+.info{
+    padding-bottom: 1.2em;
+    padding-top: 1.2em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    color: var(--Light_Gray);
+    background-color: hsl(179, 47%, 57%);
+}
+
+.info h3{
+    margin-top: 0;
+}
+
+.info p{
+    margin: 0 0 0.3em 0;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px){
+    .wrapped{
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .wrapped{
+        margin-top: 9.4em;
+        width: 600px;
+    }
+    .head{
+        padding: 20px 30px 20px 30px;
+    }
+    .wrap{
+        position: relative;
+        display: flex;
+    }
+    .wrap-price{
+        padding: 30px 30px 30px 30px;
+        width: 50%;
+    }
+    .month{
+        padding-bottom: 10px;
+    }
+    .wrap-price p{
+        padding-bottom: 8px;
+    }
+    .info{
+        padding: 30px 30px 30px 30px;
+        width: 50%;
+    }
+    .info h3{
+        margin: 0 0 8px 0;
+    }
+    .info p{
+        margin: 0 0 3px 0;
+        font-size: 0.95rem;
+    }
+}
